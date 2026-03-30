@@ -1,0 +1,14 @@
+wireguard:
+  interface:
+    address: 10.10.0.1/24
+    port: 12345
+    privateKey: "{{ vault.wireguard.interface.privateKey }}"
+
+  peers:
+    - description: client01
+      allowedIps: 10.10.0.2/32
+      publicKey: PEER_01_PUBLIC_KEY
+
+    - description: client02withNetwork
+      allowedIps: 10.10.0.3/32,192.168.0.0/24
+      publicKey: PEER_02_PUBLIC_KEY 

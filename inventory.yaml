@@ -1,0 +1,6 @@
+---
+vpn:
+  children:
+    server:
+      hosts:
+        k3s.cathaus.lan:

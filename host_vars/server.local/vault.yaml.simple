@@ -1,0 +1,4 @@
+vault:
+  wireguard:
+    interface:
+      privateKey: SERVER_PRIVATE_KEY
